@@ -38,4 +38,13 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    public function report(Exception $exception)
+    {
+        if ($this->shouldReport($exception)) {
+            Reporter::report($exception);
+        }
+
+//        parent::report($exception);
+    }
 }
