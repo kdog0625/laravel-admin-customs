@@ -25,6 +25,7 @@ class TestModelsController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new TestMovies());
+        $grid->sortable();
 
         $grid->column('id', __('Id'));
         $grid->column('title', __('Title'));
