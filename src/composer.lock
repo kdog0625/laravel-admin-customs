@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3eb533b6918a37e76e1dd2cf2f438e2e",
+    "content-hash": "230b588be7b3c4e7d725c2d86fd2c0d8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1720,6 +1720,66 @@
                 "source": "https://github.com/laravel-admin-extensions/media-manager/tree/v2.0.3"
             },
             "time": "2021-12-07T02:03:27+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/reporter",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/reporter.git",
+                "reference": "f6cf945b437f35d5d4655c478072dca53cec8074"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/reporter/zipball/f6cf945b437f35d5d4655c478072dca53cec8074",
+                "reference": "f6cf945b437f35d5d4655c478072dca53cec8074",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": ">=1.5",
+                "ext-json": "*",
+                "laravel/framework": ">=5.5",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": ">=5.5",
+                "phpunit/phpunit": ">=6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\Reporter\\ReporterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\Reporter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Exception reporter for laravel",
+            "homepage": "https://github.com/laravel-admin-extensions/reporter",
+            "keywords": [
+                "exception",
+                "laravel-admin",
+                "reporter"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-admin-extensions/reporter/issues",
+                "source": "https://github.com/laravel-admin-extensions/reporter/tree/v1.0.2"
+            },
+            "time": "2022-01-25T08:57:20+00:00"
         },
         {
             "name": "laravel-admin-ext/scheduling",
