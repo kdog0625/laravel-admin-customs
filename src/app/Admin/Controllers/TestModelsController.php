@@ -28,7 +28,7 @@ class TestModelsController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('title', __('Title'));
-        $grid->column('director', __('Director'));
+        $grid->column('order_column', __('Order column'));
         $grid->column('describe', __('Describe'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
@@ -48,7 +48,7 @@ class TestModelsController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('title', __('Title'));
-        $show->field('director', __('Director'));
+        $show->field('order_column', __('Order column'));
         $show->field('describe', __('Describe'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
@@ -66,7 +66,7 @@ class TestModelsController extends AdminController
         $form = new Form(new TestMovies());
 
         $form->text('title', __('Title'));
-        $form->number('director', __('Director'));
+        $form->number('order_column', __('Order column'));
         $form->text('describe', __('Describe'));
 
         return $form;
