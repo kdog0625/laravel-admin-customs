@@ -408,5 +408,11 @@ return [
         'media-manager' => [
             'disk' => 'public'   // Points to the disk set in config/filesystem.php
         ],
+        'composer-viewer' => [
+            // Set this to false if you want to disable this extension
+            'enable' => true,
+            // Set the location of composer command
+            'which-composer' => '/usr/local/bin/composer', // !! it's important !!
+        ]
     ],
 ];
